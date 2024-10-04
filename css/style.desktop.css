@@ -265,13 +265,14 @@ main :not(background-image, background-color, footer) {
     border-top: none;
     /* border-left: none;
     border-right: none */
-    min-height: 400px;
-    padding-bottom: 60px;
+    min-height: 435px;
+    padding-bottom: 0px;
 }
 
 .articolo img {
  width: 100%;
  height: auto;
+ min-height: 200px;
  margin-bottom: 15px;
 }
 
