@@ -128,7 +128,7 @@ body {
   -webkit-text-size-adjust: none;
 }
 
-/* FINE RESET A PARTIRE DA QUI */
+/* FINE RESET */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -145,28 +145,25 @@ body {
 
 header {
   background-color: black;
-  text-align: center;
-  padding: 35px;
+  text-align: left;
+  padding: 15px;
 }
 
 header img {
-  width: 180px;
-}
-
-main :not(background-image, background-color, footer) {
-  margin-left: 25px;
-  margin-right: 25px;
+  width: 160px;
+  padding-left: 25px;
+  vertical-align: middle;
 }
 
 main {
+  background-image: url(../assets/images/banner.jpg);
   padding: 50px 20px;
   text-align: center;
-  background-image: url(../assets/images/banner.jpg);
   background-size: cover;
   background-position: center;
-  margin-bottom: 60px;
+  max-height: 100vh;
+  margin-bottom: 40px;
 }
-
 .hero h1 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -175,8 +172,13 @@ main {
   color: #25a2c3;
   text-align: center;
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   line-height: 0.9em;
+}
+
+main :not(background-image, background-color, footer) {
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .hero button {
@@ -191,89 +193,89 @@ main {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  margin-top: 0px;
+}
+
+.section {
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: left;
+}
+
+.fotosezione {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.imglaptop {
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.testolaptop {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 18px;
   margin-top: 30px;
 }
 
-section {
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
 .sezione h4 {
+  font-size: 0.8em;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: lighter;
   font-style: normal;
   color: #25a2c3;
-  text-align: center;
-  font-size: 1em;
-  margin-bottom: 20px;
-  line-height: 0.9em;
-}
-
-.sezione p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-}
-
-.sezione img {
-  width: 60%;
-  border-radius: 50%;
-  margin-bottom: 30px;
-}
-
-.garantisce {
-  background-color: #e22d0e;
-  margin: 0px;
-  padding-top: 40px;
-  padding-bottom: 25px;
-  color: whitesmoke;
-}
-
-.garantisce h2 {
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-.garantisce span {
-  font-size: 1rem;
-  line-height: 26px;
-  font-style: italic;
-}
-
-.garantisce p {
-  margin: 0 20px px 20px;
-  line-height: 20px;
-  font-size: 1.3rem;
-  font-weight: normal;
-}
-
-.garantisce .sub {
-  font-size: 0.8rem;
-  padding-top: 0;
-  text-align: center;
-}
-
-section {
-  margin-top: 40px;
-}
-
-.articoli {
-  border: solid 1px #dee1e3;
-  padding: 0px 0px 25px 0px;
-  overflow: hidden;
-  margin-bottom: 50px;
-}
-
-.articoli img {
-  max-width: 100%;
-  border-radius: 0;
-  width: 100%;
   margin-bottom: 0;
 }
 
-.articoli h4 {
+.sezione p {
+  font-size: 0.8rem;
+  text-align: left;
+  margin-top: 1;
+}
+.garantisce {
+  background-color: #e22d0e;
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: whitesmoke;
+}
+.articoli {
+    padding-top: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.articolo {
+    
+    display: inline-block;
+    width: 28%;
+    margin: 15px;
+    vertical-align: top;
+    border: solid 1px #dee1e3;
+    padding: 0px;
+    box-sizing: border-box;
+    border-top: none;
+    /* border-left: none;
+    border-right: none */
+    min-height: 400px;
+    padding-bottom: 60px;
+}
+
+.articolo img {
+ width: 100%;
+ height: auto;
+ margin-bottom: 15px;
+}
+
+.articolo h4 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: lighter;
@@ -281,53 +283,53 @@ section {
   color: #25a2c3;
   text-align: center;
   font-size: 0.8em;
-  margin-bottom: 16px;
-  margin-top: 10px;
-  line-height: 0.9em;
+  margin-bottom: 10px;
 }
 
 .articoli p {
   font-size: 1rem;
-  line-height: 15px;
-  text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  line-height: 1.5em;
+
 }
 
+.articolo div {
+    padding: 10px;
+    
+}
 footer {
-  margin: 0px;
-  margin-top: 60px;
-  background-color: #2ca8cc;
-  color: #c8e7f0;
-  padding-bottom: 60px;
-  width: 100%;
-}
-
-footer h2 {
-  color: white;
-  font-weight: bold;
-  padding-top: 25px;
-  font-size: 1.6em;
-  padding-bottom: 25px;
-  margin-bottom: 0;
-}
-
-footer a {
-  color: #c8e7f0;
-}
-
-footer p {
-  font-size: 1rem;
-  margin: 0;
-}
-
-footer hr {
+    margin: 0px;
+    margin-top: 60px;
+    background-color: #2ca8cc;
+    color: #c8e7f0;
+    padding-bottom: 60px;
+    width: 100%;
+  }
+  
+  footer h2 {
+    color: white;
+    font-weight: bold;
+    padding-top: 40px;
+    font-size: 1.6em;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+  }
+  
+  footer a {
+    color: #c8e7f0;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  footer hr {
     margin-left: 30%; 
     margin-right: 30%; 
     fill: #c8e7f0;
   }
   
-
-body footer {
-  margin: 0;
-}
+  body footer {
+    margin: 0;
+  }
+  
